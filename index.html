@@ -1,13 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jeremiah Diaz | Quality Engineer</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Jeremiah Diaz — Quality Engineer specializing in software testing, API testing, test automation, performance testing, and CI/CD.">
+  <meta name="theme-color" content="#090e1b">
+  <title>Jeremiah Diaz | Quality Engineer</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Hi, I'm Jeremiah Diaz!</h1>
-    <h2>Quality Engineer | Software Testing | Automation</h2>
-    <p>Welcome to my professional QA portfolio.</p>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <a class="brand" href="#home"><span class="brand-mark">JD</span><span>Jeremiah Diaz</span></a>
+    <button class="menu-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Toggle navigation">☰</button>
+    <nav id="site-nav" class="site-nav" aria-label="Main navigation">
+      <a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#approach">QA Approach</a><a href="#contact" class="nav-cta">Contact</a>
+    </nav>
+  </header>
+  <main id="main">
+    <section id="home" class="hero section-wrap">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="status-dot"></span> QUALITY ENGINEER · SOFTWARE QA</p>
+        <h1>Building confidence<br>in <span class="gradient-text">every release.</span></h1>
+        <p class="hero-lede">I'm Jeremiah Diaz, a Quality Engineer focused on thoughtful test design, API and backend validation, automation, and continuous quality improvement.</p>
+        <div class="hero-actions"><a class="button button-primary" href="#projects">Explore projects <span aria-hidden="true">↘</span></a><a class="button button-secondary" href="#contact">Let's connect</a></div>
+        <div class="hero-tags"><span>API Testing</span><span>Test Automation</span><span>CI/CD</span></div>
+      </div>
+      <div class="hero-art">
+        <div class="art-glow"></div>
+        <img src="assets/quality_engineer_header.gif" alt="Animated Quality Engineer illustration with testing workflow and automation themes">
+        <div class="floating-note note-top"><span class="note-icon">✓</span><span><strong>Quality first</strong><small>Test · Learn · Improve</small></span></div>
+        <div class="floating-note note-bottom"><span class="pulse-ring"></span><span><strong>Automation mindset</strong><small>Reliable, repeatable checks</small></span></div>
+      </div>
+    </section>
+    <section class="trust-strip" aria-label="Core testing disciplines">
+      <div><span class="strip-symbol">01</span><span>Manual & Exploratory Testing</span></div><div><span class="strip-symbol">02</span><span>API & Backend Testing</span></div><div><span class="strip-symbol">03</span><span>Automation & CI/CD</span></div><div><span class="strip-symbol">04</span><span>Performance Testing</span></div>
+    </section>
+    <section id="about" class="content-section section-wrap">
+      <div class="section-heading"><p class="eyebrow">01 / ABOUT ME</p><h2>Quality is more than<br><span class="gradient-text">finding bugs.</span></h2></div>
+      <div class="about-content">
+        <p class="about-lede">It's about reducing risk, validating real user journeys, and helping teams release software with confidence.</p>
+        <p>I bring nearly seven years of software QA experience across manual testing, API and backend validation, database checks, and test automation. I enjoy investigating complex issues, communicating clear defects, and improving the way teams plan and execute testing.</p>
+        <p>This portfolio is a home for practical examples, sample test assets, and automation projects. The projects will use public demo systems or synthetic data and will not contain proprietary work.</p>
+        <div class="about-facts"><div><strong>QA</strong><span>Risk-focused testing</span></div><div><strong>API</strong><span>Contract & data validation</span></div><div><strong>CI/CD</strong><span>Repeatable feedback</span></div></div>
+      </div>
+    </section>
+    <section id="skills" class="content-section section-muted">
+      <div class="section-heading"><p class="eyebrow">02 / TOOLKIT</p><h2>Tools I work with</h2><p class="section-intro">A snapshot of my QA toolkit. I keep expanding these skills through hands-on practice and portfolio projects.</p></div>
+      <div class="skill-grid">
+        <article class="skill-card"><div class="card-icon">⌘</div><h3>Test Automation</h3><p>Playwright · pytest · Selenium</p><span class="skill-line"><i style="width:86%"></i></span></article>
+        <article class="skill-card"><div class="card-icon">{ }</div><h3>API Testing</h3><p>Postman · Newman · Swagger</p><span class="skill-line"><i style="width:90%"></i></span></article>
+        <article class="skill-card"><div class="card-icon">▤</div><h3>Performance</h3><p>Locust · JMeter</p><span class="skill-line"><i style="width:72%"></i></span></article>
+        <article class="skill-card"><div class="card-icon">⌗</div><h3>Database Testing</h3><p>SQL · PostgreSQL</p><span class="skill-line"><i style="width:76%"></i></span></article>
+        <article class="skill-card"><div class="card-icon">⟳</div><h3>CI/CD & Version Control</h3><p>Jenkins · GitHub · GitLab · Docker</p><span class="skill-line"><i style="width:72%"></i></span></article>
+        <article class="skill-card"><div class="card-icon">◎</div><h3>QA Process</h3><p>Jira · TestRail · Zephyr · Test Strategy</p><span class="skill-line"><i style="width:88%"></i></span></article>
+      </div>
+      <p class="small-note">Skill bars are visual design elements, not formal proficiency scores. Tool experience varies by project.</p>
+    </section>
+    <section id="projects" class="content-section section-wrap">
+      <div class="section-heading section-heading-row"><div><p class="eyebrow">03 / SELECTED WORK</p><h2>Projects that show<br><span class="gradient-text">how I test.</span></h2></div><p class="section-intro">Portfolio projects are being developed. Each will include setup instructions, test design rationale, execution results, and lessons learned.</p></div>
+      <div class="project-grid">
+        <article class="project-card project-featured"><div class="project-top"><span class="project-label">01 / API QUALITY</span><span class="project-glyph">{ }</span></div><h3>API Automation Framework</h3><p>A maintainable Python and pytest suite for positive, negative, boundary, authentication, and response-schema checks against a public demo API.</p><div class="chips"><span>Python</span><span>pytest</span><span>REST API</span></div><div class="project-footer"><span class="project-status"><i></i> Planned project</span><span class="arrow">↗</span></div></article>
+        <article class="project-card"><div class="project-top"><span class="project-label">02 / UI AUTOMATION</span><span class="project-glyph">▣</span></div><h3>Playwright UI Tests</h3><p>Reusable UI test patterns with smoke and regression tags, fixtures, failure artifacts, and cross-browser execution.</p><div class="chips"><span>Playwright</span><span>TypeScript</span><span>GitHub Actions</span></div><div class="project-footer"><span class="project-status"><i></i> Planned project</span><span class="arrow">↗</span></div></article>
+        <article class="project-card"><div class="project-top"><span class="project-label">03 / PERFORMANCE</span><span class="project-glyph">⌁</span></div><h3>API Performance Testing</h3><p>A Locust workload with documented load profiles, response-time analysis, failure rates, and evidence-based recommendations.</p><div class="chips"><span>Python</span><span>Locust</span><span>Reports</span></div><div class="project-footer"><span class="project-status"><i></i> Planned project</span><span class="arrow">↗</span></div></article>
+        <article class="project-card"><div class="project-top"><span class="project-label">04 / TEST DESIGN</span><span class="project-glyph">☷</span></div><h3>QA Documentation Toolkit</h3><p>Sample test plans, risk-based test scenarios, reproducible bug reports, and regression checklists for realistic workflows.</p><div class="chips"><span>Test Design</span><span>Risk Analysis</span><span>Documentation</span></div><div class="project-footer"><span class="project-status"><i></i> Planned project</span><span class="arrow">↗</span></div></article>
+      </div>
+      <p class="small-note">Replace each planned-project card with a real repository link once the project is published. Do not present planned work as completed work.</p>
+    </section>
+    <section id="approach" class="content-section section-muted">
+      <div class="section-heading"><p class="eyebrow">04 / QA APPROACH</p><h2>How I think about quality</h2></div>
+      <div class="approach-grid">
+        <article><span class="approach-number">01</span><h3>Understand risk</h3><p>Start with user impact, business rules, integrations, and failure modes to focus testing where it matters most.</p></article>
+        <article><span class="approach-number">02</span><h3>Test with intent</h3><p>Combine happy paths with negative, boundary, exploratory, and data-integrity scenarios.</p></article>
+        <article><span class="approach-number">03</span><h3>Automate wisely</h3><p>Automate repeatable, valuable checks while keeping exploratory testing and human judgment in the loop.</p></article>
+        <article><span class="approach-number">04</span><h3>Communicate clearly</h3><p>Provide reproducible defects, useful evidence, transparent risks, and actionable feedback to the team.</p></article>
+      </div>
+    </section>
+    <section id="contact" class="contact-section section-wrap">
+      <div class="contact-panel"><div><p class="eyebrow">05 / CONTACT</p><h2>Let's make software<br><span class="gradient-text">more reliable.</span></h2><p>I'm open to connecting about Quality Engineering, software testing, and automation opportunities.</p></div><div class="contact-actions"><a class="button button-primary" href="https://github.com/jhdiaz01" target="_blank" rel="noopener noreferrer">GitHub profile ↗</a><a class="button button-secondary" href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">Add your LinkedIn ↗</a><p class="small-note">Update the LinkedIn link to your personal profile before publishing. Add a professional email if you want recruiters to contact you directly.</p></div></div>
+    </section>
+  </main>
+  <footer class="site-footer section-wrap"><a class="brand" href="#home"><span class="brand-mark">JD</span><span>Jeremiah Diaz</span></a><p>Built with curiosity, tested with care.</p><a href="#home" class="back-top">Back to top ↑</a></footer>
+  <script src="script.js"></script>
 </body>
 </html>
