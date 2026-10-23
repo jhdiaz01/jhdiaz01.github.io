@@ -1,5 +1,6 @@
 const menuToggle = document.querySelector('.menu-toggle');
 const nav = document.querySelector('.site-nav');
+
 if (menuToggle && nav) {
   menuToggle.addEventListener('click', () => {
     const isOpen = nav.classList.toggle('open');
@@ -11,4 +12,16 @@ if (menuToggle && nav) {
     menuToggle.setAttribute('aria-expanded', 'false');
     menuToggle.setAttribute('aria-label', 'Toggle navigation');
   }));
+}
+
+/* When the user scrolls down, hide the navbar. When the user scrolls up, show the navbar */
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+  var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("site-header").style.top = "0";
+  } else {
+    document.getElementById("site-header").style.top = "-80px";
+  }
+  prevScrollpos = currentScrollPos;
 }
