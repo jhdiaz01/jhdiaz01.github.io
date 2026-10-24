@@ -351,6 +351,14 @@ h1 {
   letter-spacing: -0.055em;
   margin-bottom: 18px;
 }
+.section-heading-right {
+  grid-column: 2;
+  justify-self: end;
+  text-align: right;
+}
+.section-heading-right .section-intro {
+  margin-left: auto;
+}
 .about-content {
   max-width: 680px;
   color: var(--muted);
@@ -657,6 +665,9 @@ h1 {
   }
   .section-heading {
     max-width: 650px;
+  }
+  .section-heading-right {
+    grid-column: 1;
   }
   .skill-grid {
     grid-template-columns: repeat(2, 1fr);
