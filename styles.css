@@ -198,6 +198,8 @@ h1 {
   max-width: 630px;
   color: var(--muted);
   line-height: 1.9;
+  text-align: center;
+  margin: 0 auto;
 }
 .hero-actions {
   display: flex;
@@ -834,4 +836,45 @@ body {
 .social-links {
   display: flex;
   gap: 28px;
+}
+
+.typewriter h1 {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange; }
+}
+
+@media (max-width: 768px) {
+  .typewriter h1 {
+    white-space: normal;
+    overflow-wrap: anywhere;
+    border-right: 0;
+    font-size: clamp(30px, 9vw, 43px);
+    letter-spacing: 0.02em;
+    line-height: 1.15;
+    text-align: center;
+    animation: none;
+  }
+  .hero-lede {
+    max-width: 100%;
+    padding: 0 4px;
+    overflow-wrap: break-word;
+  }
 }
